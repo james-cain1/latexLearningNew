@@ -5,6 +5,14 @@
 
 \usepackage[hidelinks]{hyperref} % Allows for clickable references
 
+% Tables preamble
+\usepackage[none]{hyphenat} % stops breaking up a word in a table
+\usepackage{array}
+\newcolumntype{@}{>{\global\let\currentrowstyle\relax}}
+\newcolumntype{^}{>{\currentrowstyle}}
+\newcommand{\rowstyle}[1]{\gdef\currentrowstyle{#1}#1\ignorespaces}
+% 4 previous rows allow you to set complex table headers to bold
+
 % Graphics preamble
 \usepackage{graphicx} % Allows you to import images
 \usepackage{float} % Allows for control of float positions
@@ -115,6 +123,29 @@ Usually ground hogs nibble on greens found on the ground, but not Tobias. He is 
 \end{table}
 
 Table \ref{tab:tobiastreesightings} logs times I've seen Tobias in the tree
+
+% Example table from excel
+\begin{table}[H]
+    \centering
+    \label{tab:ctable}
+    \caption{This is the caption for the complicated table.}
+    \begin{tabular}{@p{1.5in}^p{1.5in}^p{1.5in}}
+        \rowstyle{\bfseries}Country               & Population (1000s) & TB deaths \\ \hline
+        Angola                & 21472              & 6900      \\
+        Brazil                & 200362             & 4400      \\
+        China                 & 1393337            & 41000     \\
+        Equatorial Guinea     & 757                & 67        \\
+        Guinea-Bissau         & 1704               & 1200      \\
+        India                 & 1252140            & 240000    \\ \hline
+        \multicolumn{3}{c}{\bfseries{multicolumn??}} \\ \hline
+        Mozambique            & 25834              & 18000     \\
+        Portugal              & 10608              & 140       \\
+        Russian Federation    & 142834             & 17000     \\
+        Sao Tome and Principe & 193                & 18        \\
+        South Africa          & 52776              & 25000     \\
+        Timor-Leste           & 1133               & 990      
+    \end{tabular}
+\end{table}
 
 \subsubsection{Subsubsection}
 This is a sub subsection.
