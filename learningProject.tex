@@ -3,6 +3,8 @@
 \usepackage{lipsum}
 \usepackage[margin=1in,left=1.5in,includefoot]{geometry}
 
+\usepackage[hidelinks]{hyperref} % Allows for clickable references
+
 % Graphics preamble
 \usepackage{graphicx} % Allows you to import images
 \usepackage{float} % Allows for control of float positions
@@ -64,6 +66,10 @@ Thanks to Latex creators.
 \addcontentsline{toc}{section}{\numberline{}List of figures}
 \cleardoublepage
 
+\listoftables
+\addcontentsline{toc}{section}{\numberline{}List of Tables}
+\cleardoublepage
+
 %This is main body stuff
 \pagenumbering{arabic}
 \setcounter{page}{1}
@@ -94,6 +100,22 @@ Figure \ref{fig:tobias} shows Tobias
 
 \subsection{Where Tobias gets food}
 Usually ground hogs nibble on greens found on the ground, but not Tobias. He is the exception to this rule.
+
+% Our first table
+\begin{table}[H]
+    \centering
+    \caption[This is optional caption, without reference]{Local caption, with reference}
+    \label{tab:tobiastreesightings}
+    \begin{tabular}{ l c r}
+        \bfseries{Date} & In tree? & Raining? \\ \hline
+        April 26 & Yes & Yes \\
+        June 7 & Yes & No \\
+        June 20 & Yes & No \\
+    \end{tabular}
+\end{table}
+
+Table \ref{tab:tobiastreesightings} logs times I've seen Tobias in the tree
+
 \subsubsection{Subsubsection}
 This is a sub subsection.
 
