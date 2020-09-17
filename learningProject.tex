@@ -59,6 +59,11 @@ Thanks to Latex creators.
 \thispagestyle{empty}
 \cleardoublepage
 
+% List of figures, list of tables
+\listoffigures
+\addcontentsline{toc}{section}{\numberline{}List of figures}
+\cleardoublepage
+
 %This is main body stuff
 \pagenumbering{arabic}
 \setcounter{page}{1}
@@ -76,10 +81,16 @@ Tobias likes to live in a hole in the ground. The text will wrap around properly
 Tobias, although he lives in a hole in the ground, he also likes to climb trees.
 
 The introduction is found on page \pageref{sec:intro}.
+
 % Here we insert out figure
-%\begin{figure}[H]
-    %\centering
-    %\includegraphics[height=3in]{}
+\begin{figure}[H]
+    \centering
+    \includegraphics[height=3in]{/Users/jamescain/Desktop/'tobias'InTree.jpg}
+    \caption[Optional caption]{Real, local caption}
+    \label{fig:tobias}
+\end{figure}
+
+Figure \ref{fig:tobias} shows Tobias
 
 \subsection{Where Tobias gets food}
 Usually ground hogs nibble on greens found on the ground, but not Tobias. He is the exception to this rule.

@@ -68,6 +68,12 @@ INPUT /Users/jamescain/LaTeX/learningProject/learningProject.toc
 INPUT /Users/jamescain/LaTeX/learningProject/learningProject.toc
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 OUTPUT /Users/jamescain/LaTeX/learningProject/learningProject.toc
+INPUT /Users/jamescain/LaTeX/learningProject/learningProject.lof
+INPUT /Users/jamescain/LaTeX/learningProject/learningProject.lof
+OUTPUT /Users/jamescain/LaTeX/learningProject/learningProject.lof
+INPUT /Users/jamescain/Desktop/'tobias'InTree.jpg
+INPUT /Users/jamescain/Desktop/'tobias'InTree.jpg
+INPUT /Users/jamescain/Desktop/'tobias'InTree.jpg
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /Users/jamescain/LaTeX/learningProject/learningProject.aux
