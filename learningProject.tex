@@ -92,7 +92,7 @@ Tobias likes to live in a hole in the ground. The text will wrap around properly
 
 \newpage
 \section{Tobias' Lifestyle}
-Tobias, although he lives in a hole in the ground, he also likes to climb trees.
+Tobias, although he lives in a hole in the ground, he also likes to climb trees. \cite{Cain2020}
 
 The introduction is found on page \pageref{sec:intro}.
 
@@ -112,7 +112,7 @@ Usually ground hogs nibble on greens found on the ground, but not Tobias. He is 
 % Our first table
 \begin{table}[H]
     \centering
-    \caption[This is optional caption, without reference]{Local caption, with reference}
+    \caption[This is optional caption, without reference]{Local caption, with reference \cite{Cain2020}}
     \label{tab:tobiastreesightings}
     \begin{tabular}{ l c r}
         \bfseries{Date} & In tree? & Raining? \\ \hline
@@ -149,5 +149,11 @@ Table \ref{tab:tobiastreesightings} logs times I've seen Tobias in the tree
 
 \subsubsection{Subsubsection}
 This is a sub subsection.
+
+
+\cleardoublepage
+\bibliographystyle{IEEEtran}
+\bibliography{/Users/jamescain/LaTeX/learningProject/library.bib}
+
 
 \end{document}
